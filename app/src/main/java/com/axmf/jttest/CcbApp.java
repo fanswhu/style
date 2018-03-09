@@ -6,6 +6,7 @@ import android.app.Application;
  * Created by feng on 2018/3/9.
  */
 
+//github上的一个注释
 public class CcbApp extends Application {
     @Override
     public void onCreate() {
