@@ -22,7 +22,7 @@ public class CcbApp extends Application {
         //初始化handler
 
 
-        //注册一系列grpc事件efjnlgld;';'d;'dd;'df';fenlfwe;e;a;s
+        //注册一系列GRPC事件efjnlgld; ';' d; 'DD;' DF'; fenlfwe，E，一个; Srjgskfdld;ld;l;d
 
 
 
