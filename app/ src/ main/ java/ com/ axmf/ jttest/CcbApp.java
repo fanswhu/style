@@ -20,6 +20,8 @@ public class CcbApp extends Application {
         //初始化okGo
         initOkGo();
         //初始化handleE，一个; Srjgskfdld;ld;l;d
+        
+        //哈哈哈哈哈
 
 
 
