@@ -19,10 +19,7 @@ public class CcbApp extends Application {
         super.onCreate();
         //初始化okGo
         initOkGo();
-        //初始化handler
-
-
-        //注册一系列GRPC事件efjnlgld; ';' d; 'DD;' DF'; fenlfwe，E，一个; Srjgskfdld;ld;l;d
+        //初始化handleE，一个; Srjgskfdld;ld;l;d
 
 
 
