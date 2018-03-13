@@ -1,6 +1,8 @@
 package com.axmf.jttest;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -11,31 +13,26 @@ public class MainActivity extends AppCompatActivity {
 
     EditText et;
     TextView tv;
+    private Handler handler = new Handler();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         et = (EditText) findViewById(R.id.question);
         tv = (TextView) findViewById(R.id.answer);
-
+      for(int i = 0;i<100;i++){
+          Handler handler = new Handler();
+      }
 
     }
 
     public  void request(View v){
-        Log.e("----","请求");
-        HttpPost.postByOkGo(et.getText().toString(),Constant.COMMON_QA,new HttpPost.JsonCallBack(){
+        startActivity(new Intent(this,LeakActivity.class));
+    }
 
-            @Override
-            public void onSuccess(String answer) {
-                if(answer!=null&&!answer.isEmpty())
-                    tv.setText(answer);
-            }
+    @Override
+    protected void onDestroy() {
 
-            @Override
-            public void onError() {
-                tv.setText("网络错误");
-
-            }
-        });
     }
 }
