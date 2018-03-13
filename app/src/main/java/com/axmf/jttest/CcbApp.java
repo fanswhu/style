@@ -10,7 +10,7 @@ import com.squareup.leakcanary.RefWatcher;
  * Created by feng on 2018/3/9.
  */
 
-//github上的一个注释，注释
+//github上的一个注释，注释,fhfjf
 public class CcbApp extends Application {
     private RefWatcher refWatcher;
     @Override
