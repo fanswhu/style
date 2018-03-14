@@ -16,12 +16,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class ApiService {
-    private  static  ApiService service;
+    public   static  Api service;
     //请求超时时间
     private static  final  int DEFAULT_TIMEOUT = 10000;
-    private static  final String BASE_URL = "http://";
+    private static  final String BASE_URL = "https://interface.meiriyiwen.com/";
 
-    private synchronized static ApiService getDefault(){
+    private synchronized static Api getDefault(){
         if(service == null){
             OkHttpClient.Builder  httpClientBuilder = new OkHttpClient.Builder();
             httpClientBuilder.connectTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
@@ -42,7 +42,7 @@ public class ApiService {
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .baseUrl(BASE_URL)
-                    .build().create(ApiService.class);
+                    .build().create(Api.class);
         }
         return  service;
     }
